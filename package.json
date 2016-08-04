@@ -1,0 +1,36 @@
+{
+  "name": "front-matter-editor",
+  "version": "0.0.1",
+  "description": "front-matter-editor help you to edit front-matter in markdown file ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saltfactory/front-matter-editor.git"
+  },
+  "keywords": [
+    "yaml",
+    "markdown",
+    "jekyll",
+    "front-matter",
+    "node"
+  ],
+  "author": "SungKwang Song <saltfactory@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saltfactory/front-matter-editor/issues"
+  },
+  "homepage": "https://github.com/saltfactory/front-matter-editor#readme",
+  "dependencies": {
+    "fs-filesysteminfo": "^1.0.6",
+    "gray-matter": "^2.0.2",
+    "k-gun-execsync": "^1.0.5",
+    "k-gun-fileinfo": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.0"
+  }
+}
