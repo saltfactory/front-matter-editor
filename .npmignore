@@ -1,0 +1,6 @@
+.git
+.idea
+._*
+DS_Store
+.npmrc
+npm-debug.log
