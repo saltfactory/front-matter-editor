@@ -74,6 +74,20 @@ function updateHandler(data, matter) {
 editor.read(filePath).data(updateHandler);
 ```
 
+You can use the optional third parameter `fileSystemInfo` to access information about the file itself:
+
+```
+let extend = require('util')._extend;
+
+function updateHandler(data, matter, fileSystemInfo) {
+  const d = fileSystemInfo.status.mtime;
+  data.last_updated = [d.getFullYear(), d.getMonth()+1, d.getDate()].join('-');
+  matter.data = data;
+}
+
+editor.read(filePath).data(updateHandler);
+```
+
 ## .content()
 This method update content in file.
 ```
@@ -83,6 +97,8 @@ function updateHandler(content, matter) {
 
 editor.read(filePath).content(updateHandler);
 ```
+
+This method also supports the optional third parameter `fileSystemInfo` for the callback.
 
 ## .save(destDirPath, options, callback)
 
