@@ -25,7 +25,11 @@ editor.read(filePath)
     matter.data = data;
   })
   .show()
-  .save(destPath, {postfix:'new'});
+  .save(destPath, {postfix:'new'}, (err) => {
+      if (err) {
+        console.log('could not save', err);
+      }
+  });
 ```
 
 ## front-matter-editor methods
