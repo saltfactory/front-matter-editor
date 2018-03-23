@@ -29,18 +29,18 @@ class FrontMatterService {
   }
 
   extend(func) {
-    func(this.matter.data, this.matter.content, this.matter);
+    func(this.matter.data, this.matter.content, this.matter, this.fileSystemInfo);
     return this;
   }
 
   data(func) {
     // this.matter = extend(this.matter, obj);
-    func(this.matter.data, this.matter);
+    func(this.matter.data, this.matter, this.fileSystemInfo);
     return this;
   }
 
   content(func) {
-    func(this.matter.content, this.matter);
+    func(this.matter.content, this.matter, this.fileSystemInfo);
     return this;
   }
 
@@ -79,4 +79,3 @@ module.exports = new FrontMatterService();
 // module.exports.prototype.show = function(){
 //   console.log(this.)
 // }
-
