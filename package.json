@@ -4,7 +4,7 @@
   "description": "front-matter-editor help you to edit front-matter in markdown file ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests"
   },
   "repository": {
     "type": "git",
@@ -25,12 +25,12 @@
   "homepage": "https://github.com/saltfactory/front-matter-editor#readme",
   "dependencies": {
     "fs-filesysteminfo": "^1.0.6",
-    "gray-matter": "^2.0.2",
+    "gray-matter": "^4.0.2",
     "k-gun-execsync": "^1.0.5",
     "k-gun-fileinfo": "^1.0.2"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.0.0"
+    "chai": "^4.2.0",
+    "mocha": "^6.1.1"
   }
 }
